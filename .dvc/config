@@ -1,0 +1,4 @@
+[core]
+    remote = origin
+['remote "origin"']
+    url = gdrive://1CZZpyP0i8Wu-7R66BygfmHKdDWpXjIka
