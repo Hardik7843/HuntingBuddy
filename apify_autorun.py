@@ -1,11 +1,19 @@
 from apify_client import ApifyClient
 import json
 import time
+import os
+from dotenv import load_dotenv
 
+from dotenv import dotenv_values
 
-apify_client = ApifyClient('apify_api_zIrNjSOeE1FO4VtTTFKdQ66uXBebX94DDVFp')
+config = dotenv_values(".env") 
+client_id = config['client_token']
+task_id = config['indeed_scrapper_task']
 
-task = apify_client.task("6mE22yvtCbJwJ0j0d")
+# print(type(client_id))
+apify_client = ApifyClient(client_id)
+
+task = apify_client.task(task_id)
 
 x = task.call()
 
@@ -18,24 +26,6 @@ jobs = dataset.list_items(fields = ['company' , 'description'])
 jobs = jobs.items
 
 
-# time.sleep(10)
 print(f"Run Executed Please view the log on web")
 with open('autorun.json' , 'w') as f:
     json.dump(jobs , f)
-
-# last_run = actor_indeed_scrapper.last_run(status = 'SUCCEEDED' , origin = 'API')
-
-# time.sleep(120)
-
-# runs = actor_indeed_scrapper.runs()
-
-# last_run = runs.list(limit = 1 , desc = False , status = 'SUCCEEDED')
-
-# last_dataset = last_run.dataset()
-
-# last_dataset_items = last_dataset.list_items(fields = ['descriptions'])
-
-
-
-
-
