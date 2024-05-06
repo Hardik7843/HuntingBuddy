@@ -23,4 +23,4 @@ Contributions to the HuntingBuddy platform are welcome! If you'd like to contrib
 
 ## Contact
 
-For any inquiries or feedback, please contact us at huntingbuddy@example.com.
+For any inquiries or feedback, please contact us at hardikprajapati7843@gmail.com.
