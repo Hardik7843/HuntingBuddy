@@ -8,6 +8,11 @@ HuntingBuddy is a platform designed to simplify the job hunting process by provi
 
 - **Skillset Matching**: Compare your skillset with job requirements to identify suitable job opportunities more efficiently.
 
+## Demo 
+Watch the demo video [here](demo\HuntingBuddy.mp4)
+
+Use the [app](https://huntingbuddy-production.up.railway.app/)
+
 ## Getting Started
 
 To get started with HuntingBuddy, follow these steps:
